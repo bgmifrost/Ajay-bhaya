@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jio-bp Retail Outlet Dealership - Application Form</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <div class="page-actions no-print">
+        <button type="button" id="printBtn" class="btn btn-primary">Print / Save as PDF</button>
+        <button type="button" id="resetBtn" class="btn btn-ghost">Reset Form</button>
+        <span class="hint">Tip: Use "Save as PDF" in the print dialog to download a copy.</span>
+    </div>
+
+    <main class="sheet" id="applicationSheet">
+        <!-- ================= HEADER ================= -->
+        <header class="sheet-header">
+            <div class="brand">
+                <div class="brand-logo" aria-hidden="true">
+                    <span class="brand-jio">Jio</span><span class="brand-dash">-</span><span class="brand-bp">bp</span>
+                </div>
+                <div class="brand-tag">Reliance BP Mobility Limited</div>
+            </div>
+            <div class="header-title">
+                <div class="title-line-1">APPLICATION FOR APPOINTMENT OF</div>
+                <div class="title-line-2">RETAIL OUTLET DEALER</div>
+                <div class="title-line-3">(Petrol / Diesel Pump &mdash; Regular Location)</div>
+            </div>
+            <div class="header-meta">
+                <div class="meta-row"><span class="meta-lbl">Application No.</span><span class="meta-val" id="appNo">RBML/2026/UP/00248</span></div>
+                <div class="meta-row"><span class="meta-lbl">Advertisement Ref.</span><span class="meta-val">RBML/RO/UP-83/2026</span></div>
+                <div class="meta-row"><span class="meta-lbl">Date of Application</span><span class="meta-val">14 / 07 / 2026</span></div>
+                <div class="photo-box">
+                    <div class="photo-inner">
+                        Affix<br />recent<br />passport-size<br />photograph<br />(signed across)
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <div class="notice-strip">
+            <strong>Instructions:</strong> Fill the form in BLOCK LETTERS using black/blue ink. Fields marked <span class="req">*</span> are mandatory. Attach self-attested copies of all supporting documents. Incomplete applications are liable to be rejected.
+        </div>
+
+        <!-- ================= SECTION A ================= -->
+        <section class="form-section">
+            <h2 class="section-title"><span class="sec-num">A</span> Personal Details of Applicant</h2>
+            <div class="grid">
+                <label class="field col-8">
+                    <span class="lbl">Full Name of Applicant <em class="req">*</em></span>
+                    <input type="text" value="RAIYAN RANGREZZ" />
+                </label>
+                <label class="field col-4">
+                    <span class="lbl">Gender <em class="req">*</em></span>
+                    <div class="radio-row">
+                        <label><input type="radio" name="gender" checked /> Male</label>
+                        <label><input type="radio" name="gender" /> Female</label>
+                        <label><input type="radio" name="gender" /> Other</label>
+                    </div>
+                </label>
+
+                <label class="field col-6">
+                    <span class="lbl">Father's Name <em class="req">*</em></span>
+                    <input type="text" value="MOHAMMAD TAHIR" />
+                </label>
+                <label class="field col-6">
+                    <span class="lbl">Mother's Name</span>
+                    <input type="text" placeholder="" />
+                </label>
+
+                <label class="field col-3">
+                    <span class="lbl">Date of Birth <em class="req">*</em></span>
+                    <input type="text" value="__ / __ / ____" />
+                </label>
+                <label class="field col-3">
+                    <span class="lbl">Age (as on 01/07/2026)</span>
+                    <input type="text" />
+                </label>
+                <label class="field col-3">
+                    <span class="lbl">Marital Status</span>
+                    <select>
+                        <option>Single</option>
+                        <option>Married</option>
+                        <option>Other</option>
+                    </select>
+                </label>
+                <label class="field col-3">
+                    <span class="lbl">Nationality <em class="req">*</em></span>
+                    <input type="text" value="INDIAN" readonly />
+                </label>
+
+                <label class="field col-4">
+                    <span class="lbl">Category</span>
+                    <select>
+                        <option>General (OPEN)</option>
+                        <option>OBC</option>
+                        <option>SC</option>
+                        <option>ST</option>
+                        <option>EWS</option>
+                    </select>
+                </label>
+                <label class="field col-4">
+                    <span class="lbl">Religion</span>
+                    <input type="text" value="Islam" />
+                </label>
+                <label class="field col-4">
+                    <span class="lbl">Physically Handicapped?</span>
+                    <div class="radio-row">
+                        <label><input type="radio" name="ph" /> Yes</label>
+                        <label><input type="radio" name="ph" checked /> No</label>
+                    </div>
+                </label>
+
+                <label class="field col-6">
+                    <span class="lbl">Mobile Number <em class="req">*</em></span>
+                    <input type="text" placeholder="+91-__________" />
+                </label>
+                <label class="field col-6">
+                    <span class="lbl">Email ID</span>
+                    <input type="text" placeholder="example@domain.com" />
+                </label>
+            </div>
+        </section>
+
+        <!-- ================= SECTION B ================= -->
+        <section class="form-section">
+            <h2 class="section-title"><span class="sec-num">B</span> KYC &amp; Identity Details</h2>
+            <div class="grid">
+                <label class="field col-6">
+                    <span class="lbl">Aadhaar Number (UIDAI) <em class="req">*</em></span>
+                    <input type="text" value="6037  4805  3039" class="mono" />
+                </label>
+                <label class="field col-6">
+                    <span class="lbl">PAN Number <em class="req">*</em></span>
+                    <input type="text" placeholder="ABCDE1234F" class="mono" />
+                </label>
+
+                <label class="field col-6">
+                    <span class="lbl">Voter ID / EPIC No.</span>
+                    <input type="text" class="mono" />
+                </label>
+                <label class="field col-6">
+                    <span class="lbl">Driving Licence No.</span>
+                    <input type="text" class="mono" />
+                </label>
+
+                <div class="field col-12 inline-note">
+                    <span class="lbl">Aadhaar / UIDAI Consent <em class="req">*</em></span>
+                    <label class="check-inline">
+                        <input type="checkbox" checked />
+                        I hereby give my consent to Reliance BP Mobility Limited to use my Aadhaar details for the purpose of e-KYC / verification in accordance with the Aadhaar Act, 2016.
+                    </label>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= SECTION C ================= -->
+        <section class="form-section">
+            <h2 class="section-title"><span class="sec-num">C</span> Address for Communication</h2>
+            <div class="grid">
+                <label class="field col-12">
+                    <span class="lbl">Address Line 1 (House / Building / Street) <em class="req">*</em></span>
+                    <input type="text" value="JASRANA MAIN ROAD" />
+                </label>
+                <label class="field col-6">
+                    <span class="lbl">Address Line 2 (Locality / Landmark)</span>
+                    <input type="text" placeholder="Near..." />
+                </label>
+                <label class="field col-3">
+                    <span class="lbl">Village / Town <em class="req">*</em></span>
+                    <input type="text" value="JASRANA" />
+                </label>
+                <label class="field col-3">
+                    <span class="lbl">Tehsil / Block</span>
+                    <input type="text" value="JASRANA" />
+                </label>
+
+                <label class="field col-4">
+                    <span class="lbl">District <em class="req">*</em></span>
+                    <input type="text" value="FIROZABAD" />
+                </label>
+                <label class="field col-4">
+                    <span class="lbl">State <em class="req">*</em></span>
+                    <input type="text" value="UTTAR PRADESH" />
+                </label>
+                <label class="field col-4">
+                    <span class="lbl">PIN Code <em class="req">*</em></span>
+                    <input type="text" value="283136" class="mono" />
+                </label>
+
+                <div class="field col-12 inline-note">
+                    <label class="check-inline">
+                        <input type="checkbox" checked />
+                        Permanent Address is same as Communication Address.
+                    </label>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= SECTION D ================= -->
+        <section class="form-section">
+            <h2 class="section-title"><span class="sec-num">D</span> Proposed Retail Outlet (Petrol Pump) Location</h2>
+            <div class="grid">
+                <label class="field col-6">
+                    <span class="lbl">Location Name (as per advertisement) <em class="req">*</em></span>
+                    <input type="text" value="JASRANA MAIN ROAD, FIROZABAD" />
+                </label>
+                <label class="field col-3">
+                    <span class="lbl">Category of Location</span>
+                    <select>
+                        <option>Regular (Open)</option>
+                        <option>Rural (RURO)</option>
+                        <option>SC</option>
+                        <option>ST</option>
+                        <option>OBC</option>
+                    </select>
+                </label>
+                <label class="field col-3">
+                    <span class="lbl">Highway / Road Type</span>
+                    <select>
+                        <option>State Highway</option>
+                        <option>National Highway</option>
+                        <option>Major District Road</option>
+                        <option>Village / Panchayat Road</option>
+                    </select>
+                </label>
+
+                <label class="field col-4">
+                    <span class="lbl">Frontage of Plot (in metres)</span>
+                    <input type="text" placeholder="e.g. 35" class="mono" />
+                </label>
+                <label class="field col-4">
+                    <span class="lbl">Depth of Plot (in metres)</span>
+                    <input type="text" placeholder="e.g. 35" class="mono" />
+                </label>
+                <label class="field col-4">
+                    <span class="lbl">Total Area (in sq. metres)</span>
+                    <input type="text" placeholder="e.g. 1225" class="mono" />
+                </label>
+
+                <label class="field col-4">
+                    <span class="lbl">Type of Land</span>
+                    <select>
+                        <option>Owned</option>
+                        <option>Leased (Long term)</option>
+                        <option>Firm Offer</option>
+                    </select>
+                </label>
+                <label class="field col-4">
+                    <span class="lbl">Khasra / Survey No.</span>
+                    <input type="text" class="mono" />
+                </label>
+                <label class="field col-4">
+                    <span class="lbl">Distance from nearest existing RO (km)</span>
+                    <input type="text" class="mono" />
+                </label>
+            </div>
+        </section>
+
+        <!-- ================= SECTION E ================= -->
+        <section class="form-section">
+            <h2 class="section-title"><span class="sec-num">E</span> Educational Qualification &amp; Finance</h2>
+            <table class="edu-table">
+                <thead>
+                    <tr>
+                        <th>Qualification</th>
+                        <th>Board / University</th>
+                        <th>Year</th>
+                        <th>% / CGPA</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>10th (Matriculation)</td><td></td><td></td><td></td></tr>
+                    <tr><td>12th (Intermediate)</td><td></td><td></td><td></td></tr>
+                    <tr><td>Graduation / Other</td><td></td><td></td><td></td></tr>
+                </tbody>
+            </table>
+
+            <div class="grid" style="margin-top:10px;">
+                <label class="field col-6">
+                    <span class="lbl">Bank Account Number <em class="req">*</em></span>
+                    <input type="text" class="mono" />
+                </label>
+                <label class="field col-6">
+                    <span class="lbl">IFSC Code <em class="req">*</em></span>
+                    <input type="text" class="mono" />
+                </label>
+                <label class="field col-6">
+                    <span class="lbl">Bank Name &amp; Branch</span>
+                    <input type="text" />
+                </label>
+                <label class="field col-6">
+                    <span class="lbl">Estimated Investment Capacity (INR)</span>
+                    <input type="text" placeholder="e.g. 40,00,000" class="mono" />
+                </label>
+            </div>
+        </section>
+
+        <!-- ================= SECTION F ================= -->
+        <section class="form-section">
+            <h2 class="section-title"><span class="sec-num">F</span> Documents Enclosed (Self-attested)</h2>
+            <ul class="doc-list">
+                <li><label><input type="checkbox" checked /> Aadhaar Card (front &amp; back)</label></li>
+                <li><label><input type="checkbox" /> PAN Card</label></li>
+                <li><label><input type="checkbox" /> Recent Passport-size Photograph (2 nos.)</label></li>
+                <li><label><input type="checkbox" /> Educational Qualification Certificate(s)</label></li>
+                <li><label><input type="checkbox" /> Proof of Land / Site (Sale Deed / Lease / Firm Offer)</label></li>
+                <li><label><input type="checkbox" /> Land Revenue Records (Khasra / Khatauni)</label></li>
+                <li><label><input type="checkbox" /> Bank Statement / Solvency Certificate</label></li>
+                <li><label><input type="checkbox" /> Caste Certificate (if applicable)</label></li>
+                <li><label><input type="checkbox" /> Application Fee Receipt (Non-Refundable)</label></li>
+            </ul>
+        </section>
+
+        <!-- ================= DECLARATION ================= -->
+        <section class="form-section declaration">
+            <h2 class="section-title"><span class="sec-num">G</span> Declaration by Applicant</h2>
+            <p class="decl-body">
+                I, <strong>RAIYAN RANGREZZ</strong>, son of <strong>MOHAMMAD TAHIR</strong>, resident of
+                <strong>Jasrana Main Road, Tehsil Jasrana, District Firozabad, Uttar Pradesh &mdash; 283136</strong>,
+                do hereby solemnly declare that the information furnished above is true, complete and correct to the
+                best of my knowledge and belief. I understand that in the event of any information being found false
+                or incorrect at any stage, my candidature / dealership is liable to be cancelled / terminated without
+                any notice, and I shall have no claim whatsoever against Reliance BP Mobility Limited (Jio-bp).
+                I further undertake to abide by all the terms and conditions of the Brochure / MDG (Marketing
+                Discipline Guidelines) issued by the Company / MoP&amp;NG, Government of India.
+            </p>
+
+            <div class="sign-grid">
+                <div class="sign-box">
+                    <div class="sign-line"></div>
+                    <div class="sign-caption">Signature of Applicant</div>
+                    <div class="sign-sub">Name: RAIYAN RANGREZZ</div>
+                </div>
+                <div class="sign-box">
+                    <div class="sign-line"></div>
+                    <div class="sign-caption">Place &amp; Date</div>
+                    <div class="sign-sub">Jasrana &nbsp;|&nbsp; 14 / 07 / 2026</div>
+                </div>
+                <div class="sign-box">
+                    <div class="sign-line"></div>
+                    <div class="sign-caption">Thumb Impression (LTI / RTI)</div>
+                    <div class="sign-sub">(if applicable)</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= OFFICE USE ================= -->
+        <section class="form-section office-use">
+            <h2 class="section-title office"><span class="sec-num">H</span> For Office Use Only</h2>
+            <div class="grid">
+                <label class="field col-4">
+                    <span class="lbl">Received on</span>
+                    <input type="text" />
+                </label>
+                <label class="field col-4">
+                    <span class="lbl">Receiving Officer</span>
+                    <input type="text" />
+                </label>
+                <label class="field col-4">
+                    <span class="lbl">Diary No.</span>
+                    <input type="text" class="mono" />
+                </label>
+                <label class="field col-6">
+                    <span class="lbl">Remarks</span>
+                    <input type="text" />
+                </label>
+                <label class="field col-6">
+                    <span class="lbl">Stamp &amp; Sign of Territory Manager</span>
+                    <input type="text" />
+                </label>
+            </div>
+        </section>
+
+        <footer class="sheet-footer">
+            <div>Reliance BP Mobility Limited (Jio-bp) &middot; Regd. Office: Reliance Corporate Park, Ghansoli, Navi Mumbai &ndash; 400701</div>
+            <div>CIN: U23200MH2017PLC298350 &middot; www.jiobp.com &middot; Toll-Free: 1800-891-9023</div>
+            <div class="watermark-note">This is a specimen application form. Submission does not, by itself, constitute an offer or an assurance of dealership.</div>
+        </footer>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
