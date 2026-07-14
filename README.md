@@ -33,6 +33,15 @@ python3 -m http.server 8000
 - **Print / Save as PDF** button — clean print stylesheet (A4, `@page` margin 10mm).
 - Fully responsive — works on mobile as well as A4 print.
 
+## Ready-made PDF downloads
+
+Two pre-rendered A4 PDFs are committed at the repo root:
+
+- **`Jio-Pump-Application-Raiyan-Rangrezz.pdf`** — 1-page hand-written paper form (matches the reference photo).
+- **`Jio-bp-Application-Digital-Raiyan-Rangrezz.pdf`** — full multi-page digital form.
+
+Both pages also expose a **"Download PDF"** button that links to these files.
+
 ## Two versions included
 
 1. **Digital form** — `index.html` + `styles.css` + `script.js`
